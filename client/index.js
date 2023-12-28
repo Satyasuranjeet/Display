@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   function refreshData() {
-    fetch('http://localhost:3000/data')
+    fetch('https://display-2q59.onrender.com/data')
       .then(response => response.json())
       .then(data => {
         // Get the table element
