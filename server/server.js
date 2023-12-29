@@ -10,6 +10,9 @@ const dbName = 'Demo'; // replace with your database name
 const collectionName = 'Data'; // replace with your collection name
 
 app.use(cors()); // Enable CORS for all routes
+app.get('/', (req, res) => {
+  res.send('hi this is Satya!');
+});
 
 app.get('/data', async (req, res) => {
   let client; // declare the client variable outside the try-catch block
